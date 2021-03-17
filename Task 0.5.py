@@ -3,7 +3,6 @@ import math
 
 def area_of_triangle(side_one, side_two, side_three):
     semi_perimeter = (side_one + side_two + side_three)/2
-    print(semi_perimeter)
     return math.sqrt(semi_perimeter * (semi_perimeter - side_one) * (semi_perimeter - side_two) * (semi_perimeter - side_three))
 
 
