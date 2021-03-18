@@ -4,7 +4,7 @@ def time(number):
     if hour > 1 and minute >= 0:
         print(str(hour) + ' hours, ' + str(minute) + " minutes")
 
-    elif hour == 1 and minute >= 0:
+    elif hour == 1 and minute > 1 or minute == 0:
         print(str(hour) + ' hour, ' + str(minute) + " minutes")
     elif hour == 1 and minute == 1:
         print(str(hour) + ' hour, ' + str(minute) + " minute")
@@ -20,5 +20,6 @@ def time(number):
 time(75)
 time(105)
 time(120)
-time(50)
+time(61)
+time(59)
 time(250)
